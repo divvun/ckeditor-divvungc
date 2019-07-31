@@ -6,14 +6,14 @@
   "private": true,
   "devDependencies": {
     "babel-cli": "^6.14.0",
-    "babel-preset-babili": "0.0.3",
-    "babel-preset-es2015": "^6.14.0",
-    "flow-bin": "^0.39.0",
-    "iflow-jquery": "^1.2.2",
-    "l20n": "^4.0.0-beta.1"
+    "babel-preset-minify": "0.5.0",
+    "babel-preset-env": "^1.7.0",
+    "flow-bin": "^0.93.0",
+    "flow-typed": "^2.5.1",
+    "l20n": "^5.0.0"
   },
   "scripts": {
-    "build": "babel --no-comments src -d lib --source-maps"
+    "build": "node_modules/.bin/babel --presets minify --no-comments src -d lib --source-maps"
   },
   "dependencies": {
     "ckeditor": "^4.6.2",
